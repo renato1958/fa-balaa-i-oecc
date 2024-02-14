@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.canvas {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+@keyframes faBalaaIOecc {
+  25% {
+    transform: translate(30px);
+  }
+  75% {
+    transform: translate(-30px);
+  }
+}
+
+svg:hover {
+  cursor: pointer;
+}
+svg:hover .pupille {
+  -webkit-animation: faBalaaIOecc 2s linear infinite;
+          animation: faBalaaIOecc 2s linear infinite;
+}
